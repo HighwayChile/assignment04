@@ -1,0 +1,246 @@
+/* CSS stylesheet for assignment04, Richard Sapp, CS290 */
+body {
+    background-color: rgb(161, 236, 161);
+    background-image: url('./img/lou-diamond-phillips-pencil-greg-joens.jpg');
+    font-size: 16pt;
+    font-family: arial;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    position: relative;
+    background-clip: border-box;
+    -webkit-background-clip: border-box;
+    z-index: 0;
+}
+
+article {
+    flex: 1;
+    border: 2px solid royalblue;
+}
+
+#topofpage {
+    font-size: 150%;
+}
+
+/* FIX TOP MENU TO BE NAV */
+#top_menu {
+    width: 45%;
+    text-align: center;
+    align-items: center;
+    float: right;
+    border: 2px solid black;
+    background-color: lightgray;
+    font-weight: 600;
+}
+
+.top_menu {
+    position: sticky;
+    top: 5px;
+    z-index: 1;
+}
+
+.top_menu_cell {
+    width: 25%;
+    border: 2px solid black;
+    background-color: inherit;
+}
+
+/* search-container learned from chatgpt */
+.search_container {
+    display: flex;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 100px
+}
+
+button {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: bisque;
+}
+
+/* dropdown menu learned from w3schools https://www.w3schools.com/howto/howto_css_dropdown.asp */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.genre_drpdwn_content {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    background-color: lightgray;
+    display: none;
+    position: absolute;
+    font-size: 40%;
+    z-index: 1;
+}
+
+.genre_drpdwn_content a {
+    font-size: 150%;
+    color: black;
+    display: block;
+}
+
+.inspiring_quote {
+    text-shadow: 4px 4px 8px white;
+    text-align: center;
+    font-style: italic;
+}
+
+.attribution {
+    padding-top: 40%;
+    font-size: 10pt;
+    text-align: center;
+}
+
+.side_menu {
+    width: 65px;
+    height: 400px;
+    background-color: lightgray;
+    border: 2px solid black;
+    border-radius: 5px;;
+    float: left;
+    position: fixed;
+    z-index: 1;
+    font-size: 12pt;
+}
+
+caption {
+    font-style: italic;
+    font-size: 150%;
+    background-color: goldenrod;
+    color: purple;
+    border: 2px solid royalblue; 
+    padding: 25px; 
+    text-align: center; 
+    font-weight: 600;
+}
+
+.loulist {
+    /* responsive layout */
+    width: 100%;
+    border: 2px solid royalblue;
+    background-color: goldenrod;
+    color: purple;
+    text-align: center; 
+    align-items: center;
+    /* overflow */
+    overflow: scroll;
+}
+
+.loulist_cell {
+    /* fluid layout */
+    min-width: 200px;
+    width: 25%;
+    border: 1px solid royalblue;
+    /* overflow: scroll; */
+}
+
+.review {
+    padding: 20px;
+    /* margin: 20px; */
+    text-align: center;
+    background-color: goldenrod;
+    color: purple;
+    overflow: auto;
+}
+
+.advertisement {
+    /* fixed width */
+    width: 150px;
+    height: 100px;
+    overflow-y: scroll;
+    border: 2px solid black; 
+    float: left;
+    position: relative;
+    z-index: 2;
+}
+
+#advertisement_2 {
+    font-size: 16pt;
+    width: 400px;
+    display: inline;
+    float: right;
+    clear: left;
+    position: relative;
+    background-color: brown;
+}
+
+#advertisement_3 {
+    font-size: 16pt;
+    box-sizing: border-box;
+}
+
+#advertisement_4 {
+    font-size: 18pt;
+    display: none;
+}
+
+.gototop {
+    /* font-size: 300%; */
+    clear: left;
+    padding-top: 100px;
+}
+
+.content.show {
+    display: block;
+}
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: darkblue;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:active {
+    color: darkblue;
+}
+
+.top_menu_cell:hover {
+    font-size: 200%;
+}
+
+.genre_drpdwn_content a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .genre_drpdwn_content {
+    display: grid;
+}
+
+/* @media parameters */
+@media screen and (max-width: 800px) {
+    body {
+        background-position-y: 50px;
+        background-size: 75%;
+    }
+    
+    .side_menu {
+        display: none;
+    }
+}
+
+/* this makes room for side menu/reviews when the screen is over 800px */
+@media screen and (min-width: 800px) {
+    .review {
+        padding-left: 70px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 12pt;
+    }
+}
