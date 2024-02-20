@@ -9,8 +9,29 @@
 </head>
 
 <body>
+  <!-- breadcrumb -->
+  <a href="../assignment04.html">Home</a>
 
   <h1> THIS PAGE FER TESTIN'!</h1>
+
+  <h2>Trying to make an input paragraph for the user review</h2>
+
+  <label for="user_review">Your review:</label>
+  <input type="text" id="user_review">
+  <button onclick="printToPage()">Submit Review</button>
+
+  <p id="output"></p> 
+
+  <script>
+    function printToPage() {
+      var user_review = document.getElementById("user_review").value;
+      // alert(testReview);
+      document.getElementById('output').textContent = "User: " + (user_review);
+      // console.log(user_review);
+    }
+  </script>
+
+
 
   <h2>learnin array stuff</h2>  
   <p id="arraydemo01"></p>
@@ -82,6 +103,8 @@
   
 </script>
   
+<!-- breadcrumb -->
+<a href="../assignment04.html">Home</a>
 
 
 </body>

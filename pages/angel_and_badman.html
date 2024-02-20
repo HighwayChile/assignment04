@@ -17,6 +17,20 @@
 <body>
 
   <h1>Angel and the Badman is really good 10/10</h1>
+  <label for="user_review">Your review:</label>
+  <input type="text" id="user_review">
+  <button onclick="printToPage()">Submit Review</button>
+
+  <p id="output"></p> 
+
+  <script>
+    function printToPage() {
+      var user_review = document.getElementById("user_review").value;
+      document.getElementById('output').textContent = "User: " + (user_review);
+    }
+  </script>
+  <br>
+  
   <a href="../assignment04.html">home</a>
   
   

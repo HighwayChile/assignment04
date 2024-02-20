@@ -4,16 +4,17 @@ cs290_winter2024
 # REQUIREMENTS
 Create a webpage with enough elements and styles that allow you to show off some JavaScript capabilities  
 and include at least the following JavaScript features:  
-input (perhaps using an input element),  
-output (maybe inside a <p> or in a fancier element),  
-variables of a few datatypes (at least number, string, boolean, and a couple objects),  
+  
+input (perhaps using an input element),  - DONE
+output (maybe inside a <p> or in a fancier element),  - DONE
+variables of a few datatypes (at least number, string, boolean, and a couple objects),  - NEED MORE TYPES
 show off some common errors and how you might avoid them,  
 conditionals,  
 repetition,  
-arrays,  
-functions,  
-demonstrate scope,  
-objects and events  
+arrays,  - NEED ARRAY MAKE AN ARRAY FOR USER REVIEWS? (start with empty array, then fill with strings)
+functions,  - DONE
+demonstrate scope,  - DONE
+objects and events  - DONE, BUT COULD USE MORE
 
 
 Go find a JavaScript library that has some features that you think might be useful and be ready to discuss  
@@ -29,19 +30,19 @@ I also want to add user interactivity in search and user ratings/reviews (form a
 <br>  
 
 # PLANS  
-1. create search function  - need more javascript - cancelled for this week
-2. add rating system - two buttons: rough and diamond  
-3. finish movie page design - must make user-submitted review here.
+1. create search function  - need more javascript - cancelled for this week  
+2. add rating system - two buttons: rough and diamond - cancelled for now  
+3. finish movie page design - must make user-submitted review here. - Almost working
 4. provide text field for user-provided reviews - input text, submit and write to page?  
     - (method="post" or "get") these are two main methods to send info  
 5. add nav menus instead of current tables(also remove side menus from main and styles)  
     get ready for pop-out side-menu. should collapse into side (use collapsable?) - PRIORITIZE
-6. perhaps move the movielist/loulist to the browse page - PRIORITIZE
+6. perhaps move the movielist/loulist to the browse page - DONE
 7. must change the "loulsit" id for the loulist cells. Those should be a class, if anything.  - DONE
 8. make pages, scripts, and the rest in their own folders  - DONE
-9. For User Reviews: I need an array witha  variable size, or witha fixed size that shifts right when 
+9. For User Reviews: I need an array with a variable size, or with a fixed size that shifts right when 
     the number of reviews grows too large.
-10. For library portion: use: ReactJS(react.js), 
+10. For library portion: use: ReactJS(react.js), Angular.js, Node.js, Socket.io
 
 
 
