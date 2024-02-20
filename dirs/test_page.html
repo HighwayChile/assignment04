@@ -12,7 +12,7 @@
   <!-- breadcrumb -->
   <a href="../assignment04.html">Home</a>
 
-  <h1> THIS PAGE FER TESTIN'!</h1>
+  <!-- <h1> THIS PAGE FER TESTIN'!</h1>
 
   <h2>Trying to make an input paragraph for the user review</h2>
 
@@ -29,7 +29,7 @@
       document.getElementById('output').textContent = "User: " + (user_review);
       // console.log(user_review);
     }
-  </script>
+  </script> -->
 
 
 
@@ -102,6 +102,56 @@
   document.getElementById("timedemo02").innerHTML = e.toTimeString();
   
 </script>
+
+
+
+  <h2>Movie Reviews</h2>
+  <label for="user_review">Your review:</label>
+  <input type="text" id="user_review">
+  <button onclick="submitReview()">Submit Review</button>
+
+  <div id="reviews"></div>
+
+  <script>
+    // Array to store reviews
+    var reviews = [];
+
+    // Function to submit review
+    function submitReview() {
+      var userReview = document.getElementById("user_review").value;
+
+      // Check if the input is not empty
+      if (userReview.trim() !== "") {
+        // Add the review to the array
+        reviews.push(userReview);
+
+        // Update the displayed reviews
+        displayReviews();
+
+        // Clear the input field
+        document.getElementById("user_review").value = "";
+      }
+    }
+
+    // Function to display reviews on the page
+    function displayReviews() {
+      var reviewsContainer = document.getElementById("reviews");
+      reviewsContainer.innerHTML = "<h3>Reviews:</h3>";
+
+      // Loop through the reviews array and display each review
+      for (var i = 0; i < reviews.length; i++) {
+        var reviewParagraph = document.createElement("p");
+        reviewParagraph.textContent = "User Review: " + reviews[i];
+        reviewsContainer.appendChild(reviewParagraph);
+      }
+    }
+  </script>
+
+
+
+
+
+
   
 <!-- breadcrumb -->
 <a href="../assignment04.html">Home</a>
