@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title></title>
+  <link rel="stylesheet" href="../styles_04.css">
+  <meta charset="UTF-8">
+  <meta name="description" content="testin and learnin">
+  <meta name="viewport" content="width=device-width, initial scale=1.0">
+</head>
+
+<body>
+
+  <h1> THIS PAGE FER TESTIN'!</h1>
+
+  <h2>learnin array stuff</h2>  
+  <p id="arraydemo01"></p>
+
+  <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("arraydemo01").innerHTML = fruits.toString();
+  </script>
+
+  <h2>looping arrays</h2>  
+  <p id="arraydemo02"></p>
+
+  <script>
+    let fLen = fruits.length;
+
+    let text = "<ul>";
+      for (let i = 0; i < fLen; i++) {
+        text += "<li>" + fruits[i] + "</li>";
+      }
+
+      text += "</ul>"
+      document.getElementById("arraydemo02").innerHTML = text;
+
+  </script>
+  
+  <h2>loop with forEach method</h2> 
+  <p id="arraydemo03"></p>
+
+  <script>
+    
+    let text2 = "<ol>";
+    fruits.forEach(myFunction);
+    text2 += "</ol>";
+    
+    document.getElementById("arraydemo03").innerHTML = text2;
+    
+    function myFunction(value) {
+      text2 += "<li>" + value + "</li>";
+    } 
+    </script>
+
+
+  <h2>showin off objects</h2>
+  <p id="objectdemo01"></p>
+  <p id="objectdemo02"></p>
+  <p id="objectdemo03"></p>
+
+  <script>
+    const person = {firstname:"Dickie", lastname:"Danger", age:"200"}
+    document.getElementById("objectdemo01").innerHTML = person.firstname.toString()
+    document.getElementById("objectdemo02").innerHTML = person.lastname.toString()
+    document.getElementById("objectdemo03").innerHTML = person.age.toString()
+  </script>
+
+
+<h2>check the date</h2>
+<p id="timedemo01"></p>
+<script>
+  const d = new Date();
+  document.getElementById("timedemo01").innerHTML = d.toDateString();
+
+</script>
+
+<h2>check the time</h2>
+<p id="timedemo02"></p>
+<script>
+  const e = new Date();
+  document.getElementById("timedemo02").innerHTML = e.toTimeString();
+  
+</script>
+  
+
+
+</body>
+</html>
+
+
+

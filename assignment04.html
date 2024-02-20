@@ -46,8 +46,9 @@
 
   <div id="topofpage"><p>louvie.com</p></div>
 
-  <!-- navigation vertical -->
-  <div class="side_menu">
+  <!-- This is the side menu, must change to collapsable!!! -->
+
+  <!-- <div class="side_menu">
     <table>
       <tr>
         <td class="side_menu_cell">search</td>
@@ -65,7 +66,7 @@
         <td class="side_menu_cell"><a href="./dirs/contact_info.html">contact</a></td>
       </tr>
     </table>
-  </div>
+  </div> -->
 
   <div class="inspiring_quote"><p>"I feel fortunate to be employed in the film business, and still be standing."<br> - Lou Diamond Phillips</p></div>
 
@@ -232,17 +233,23 @@
   <div class="advertisement" id="advertisement_3">**ADVERTISEMENT**<br>BUY MORE STUFF!!! <br>SERIOUSLY! BUY MORE! <br>YOU DON'T HAVE ENOUGH STUFF! <br>CONSUME! <br>BUY EVERY SINGLE ONE!</div>
   <div class="advertisement" id="advertisement_4">**ADVERTISEMENT**<br>BUY MORE STUFF!!! <br>SERIOUSLY! BUY MORE! <br>YOU DON'T HAVE ENOUGH STUFF! <br>CONSUME! <br>BUY EVERY SINGLE ONE!</div>
 
+  <div class="gototest">
+    <button type="goto" onclick="goToTest()">TEST PAGE</button>
+
+  </div>
 
 <div class="gototop"><a href="#topofpage">Go to top</a>
   <br>
 <a href="./dirs/contact_info.html">contact</a>
-<script src="script.js"></script>
 </div>
   
+<script>
+  function goToTest() {
+    window.location.href="./dirs/test_page.html";
+  }
+</script>
+
 </body>
-
-
-
 </html>
 
 

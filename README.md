@@ -34,10 +34,14 @@ I also want to add user interactivity in search and user ratings/reviews (form a
 3. finish movie page design - must make user-submitted review here.
 4. provide text field for user-provided reviews - input text, submit and write to page?  
     - (method="post" or "get") these are two main methods to send info  
-5. add nav menus instead of current tables  PRIORITIZE
-6. perhaps move the movielist/loulist to the browse page  PRIORITIZE
+5. add nav menus instead of current tables(also remove side menus from main and styles)  
+    get ready for pop-out side-menu. should collapse into side (use collapsable?) - PRIORITIZE
+6. perhaps move the movielist/loulist to the browse page - PRIORITIZE
 7. must change the "loulsit" id for the loulist cells. Those should be a class, if anything.  - DONE
 8. make pages, scripts, and the rest in their own folders  - DONE
+9. For User Reviews: I need an array witha  variable size, or witha fixed size that shifts right when 
+    the number of reviews grows too large.
+10. For library portion: use: ReactJS(react.js), 
 
 
 
