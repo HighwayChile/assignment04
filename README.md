@@ -7,7 +7,7 @@ and include at least the following JavaScript features:
   
 input (perhaps using an input element),  - DONE
 output (maybe inside a <p> or in a fancier element),  - DONE
-variables of a few datatypes (at least number, string, boolean, and a couple objects),  - NEED MORE TYPES
+variables of a few datatypes (at least number, string, boolean, and a couple objects),  - NEED Num & Bool
 show off some common errors and how you might avoid them,  
 conditionals,  - DONE
 repetition,  - DONE
@@ -39,11 +39,11 @@ This week, I want to tear down, and rebuild my site in a more intuitive way for 
 6. perhaps move the movielist/loulist to the browse page - DONE
 7. must change the "loulsit" id for the loulist cells. Those should be a class, if anything.  - DONE
 8. make pages, scripts, and the rest in their own folders  - DONE
-9. For User Reviews: I need an array with a variable size, or with a fixed size that shifts right when 
-    the number of reviews grows too large.
-10. For library portion: use: ReactJS(react.js), Angular.js, Node.js, Socket.io
+9. For library portion: use: ReactJS(react.js), Angular.js, Node.js, Socket.io
 
 
 
 # REFLECTION NOTES
 
+So tired... wish I had got more done. I am considering moving on to a different site next week, but I  
+kinda like louvie.com  
