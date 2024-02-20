@@ -7,7 +7,7 @@ and include at least the following JavaScript features:
   
 input (perhaps using an input element),  - DONE
 output (maybe inside a <p> or in a fancier element),  - DONE
-variables of a few datatypes (at least number, string, boolean, and a couple objects),  - NEED Num & Bool
+variables of a few datatypes (at least number, string, boolean, and a couple objects),  - NEED Num
 show off some common errors and how you might avoid them,  
 conditionals,  - DONE
 repetition,  - DONE
@@ -46,4 +46,17 @@ This week, I want to tear down, and rebuild my site in a more intuitive way for 
 # REFLECTION NOTES
 
 So tired... wish I had got more done. I am considering moving on to a different site next week, but I  
-kinda like louvie.com  
+kinda like louvie.com 
+
+Please discount my "Test page," it is mostly copy/pasted code from random places. (some is my code :)
+
+My best use of input is in the "pages" section, because each individual movie page has a movie review  
+input field! My plan is to write this info to a json file in the future so it can be recalled.  
+The output is also on those same pages, although it disappears on refresh
+I have variables all over the place, and I had to technically get a boolean operation in my if/else statement.  
+I never found a good place to use numbers.
+One common error that I displayed throughout my code is the snake_case vs camelCase. I am a little confused  
+after so much C and Python and I know I mixed it on some pages. I think I did a good job of keeping my functions
+camelCase.
+Conditionals, repetition, arrays and functions are all taken care of in: ./pages/review_script.js
+objects and events are also in review_script.js

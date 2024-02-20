@@ -1,9 +1,9 @@
-
+// empty array to store user reviews
 var reviews = [];
 
 function printToPage() {
   let userReview = document.getElementById("user_review").value;
-  // document.getElementById('output').textContent = "User: " + (user_review);
+  // if review is not empty
   if (userReview.trim() !== "") {
     // adds to array (appends)
     reviews.push(userReview);
@@ -13,6 +13,10 @@ function printToPage() {
 
     // clear input field
     document.getElementById("user_review").value = "";
+    alert("thanks for the review! (boolean)")
+  } else {
+    // if review is empty (this is technically boolean. The best kind of boolean! Better than boolean!)
+    alert("No empty reviews! (boolean)")
   }
 }
 
@@ -23,7 +27,9 @@ function updateDisplay() {
 
   // loop to display the array of strings
   for (var i = 0; i < reviews.length; i++) {
+    // creates new paragraph element
     let review_paragraph = document.createElement("p")
+    // adds quotation marks and appends to page
     review_paragraph.textContent = '"' + reviews[i] + '"';
     review_container.appendChild(review_paragraph);
   }
