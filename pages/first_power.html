@@ -21,14 +21,9 @@
   <input type="text" id="user_review">
   <button onclick="printToPage()">Submit Review</button>
 
-  <p id="output"></p> 
+  <div id="reviews"></div> 
 
-  <script>
-    function printToPage() {
-      var user_review = document.getElementById("user_review").value;
-      document.getElementById('output').textContent = "User: " + (user_review);
-    }
-  </script>
+  <script src="review_script.js"></script>
   <br>
   
   <a href="../assignment04.html">home</a>

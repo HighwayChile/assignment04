@@ -9,9 +9,9 @@ input (perhaps using an input element),  - DONE
 output (maybe inside a <p> or in a fancier element),  - DONE
 variables of a few datatypes (at least number, string, boolean, and a couple objects),  - NEED MORE TYPES
 show off some common errors and how you might avoid them,  
-conditionals,  
-repetition,  
-arrays,  - NEED ARRAY MAKE AN ARRAY FOR USER REVIEWS? (start with empty array, then fill with strings)
+conditionals,  - DONE
+repetition,  - DONE
+arrays,  - DONE
 functions,  - DONE
 demonstrate scope,  - DONE
 objects and events  - DONE, BUT COULD USE MORE
@@ -26,7 +26,6 @@ some of this with the class
 # DESIGN  
 
 This week, I want to tear down, and rebuild my site in a more intuitive way for the user  
-I also want to add user interactivity in search and user ratings/reviews (form and method is the way (post or get))  
 <br>  
 
 # PLANS  
@@ -45,4 +44,6 @@ I also want to add user interactivity in search and user ratings/reviews (form a
 10. For library portion: use: ReactJS(react.js), Angular.js, Node.js, Socket.io
 
 
+
+# REFLECTION NOTES
 

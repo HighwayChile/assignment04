@@ -15,20 +15,18 @@
 </head>
 
 <body>
+  <h1>Professional Critic Review</h1>
+  <h2>young guns is really good 10/10</h2>
 
-  <h1>young guns is really good 10/10</h1>
+  <!-- This is to add a user review to an array -->
+  <h1>User Submitted Review</h1>
   <label for="user_review">Your review:</label>
   <input type="text" id="user_review">
   <button onclick="printToPage()">Submit Review</button>
 
-  <p id="output"></p> 
+  <div id="reviews"></div> 
 
-  <script>
-    function printToPage() {
-      var user_review = document.getElementById("user_review").value;
-      document.getElementById('output').textContent = "User: " + (user_review);
-    }
-  </script>
+  <script src="review_script.js"></script>
   <br>
   
   <a href="../assignment04.html">home</a>
